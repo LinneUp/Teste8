@@ -19,7 +19,7 @@ public class Cliente {
         return this.status;
     }
 
-    public double getCompras() {
+    public int getCompras() {
         return this.compras;
     }
 
