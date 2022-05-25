@@ -18,19 +18,7 @@ public class Contas {
         Cliente cli11 = new Cliente("Jose",false,78);
         Cliente cli12 = new Cliente("Josue",false,0);
 
-        int[] media = new int[12];
-        media[0]=50;
-        media[1]=20;
-        media[2]=250;
-        media[3]=40;
-        media[4]=30;
-        media[5]=570;
-        media[6]=54;
-        media[7]=2;
-        media[8]=5;
-        media[9]=65;
-        media[10]=78;
-        media[11]=0;
+
 
 
         List<Cliente> clientes = Arrays.asList(cli1,cli2,cli3,cli4,cli5,cli6,cli7,cli8,cli9,cli9,cli10,cli11,cli12);
@@ -54,11 +42,12 @@ public class Contas {
                 System.out.println("------------------------");
 
 
+
+
 //Média de compras dos clientes
 
-        IntStream streamOf= Arrays.stream(media);
-        OptionalDouble mediaNumeros = streamOf.average();
-        System.out.println("A Média de compras de clientes é " + mediaNumeros);
+
+        System.out.println("A Média de compras é de : " + clientesFiltrados.stream().mapToDouble(Cliente::getCompras).average().getAsDouble());
 
     }
 }
