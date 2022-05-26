@@ -12,7 +12,7 @@ public class Contas {
         Cliente cli5 = new Cliente("Gabriela",true,30);
         Cliente cli6 = new Cliente("Daiana",true,570);
         Cliente cli7 = new Cliente("Lilian",false,54);
-        Cliente cli8 = new Cliente("Toni",true,2);
+        Cliente cli8 = new Cliente("Toni",true,20);
         Cliente cli9 = new Cliente("Adriana",true,5);
         Cliente cli10 = new Cliente("Sheila",true,65);
         Cliente cli11 = new Cliente("Jose",false,78);
@@ -21,7 +21,7 @@ public class Contas {
 
 
 
-        List<Cliente> clientes = Arrays.asList(cli1,cli2,cli3,cli4,cli5,cli6,cli7,cli8,cli9,cli9,cli10,cli11,cli12);
+        List<Cliente> clientes = Arrays.asList(cli1,cli2,cli3,cli4,cli5,cli6,cli7,cli8,cli9,cli10,cli11,cli12);
 
         List<Cliente> clientesFiltrados = clientes.stream().filter(cliente -> cliente.getCompras()>=0).toList();
             for(Cliente cliente :  clientesFiltrados) {
