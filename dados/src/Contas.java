@@ -16,7 +16,7 @@ public class Contas {
         Cliente cli9 = new Cliente("Adriana",true,5);
         Cliente cli10 = new Cliente("Sheila",true,65);
         Cliente cli11 = new Cliente("Jose",false,78);
-        Cliente cli12 = new Cliente("Josue",false,0);
+        Cliente cli12 = new Cliente("Josue",false,100);
 
 
 
@@ -47,7 +47,7 @@ public class Contas {
 //Média de compras dos clientes
 
 
-        System.out.println("A Média de compras é de : " + clientesFiltrados.stream().mapToDouble(Cliente::getCompras).average().getAsDouble());
+        System.out.println("A Média de compras é de : " + clientes.stream().mapToDouble(Cliente::getCompras).average().getAsDouble());
 
     }
 }
